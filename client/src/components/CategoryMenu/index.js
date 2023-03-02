@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import { useStoreContext } from "../../utils/GlobalState";
 import { QUERY_CATEGORIES } from '../../utils/queries';
 
-function CategoryMenu({ }) {
+function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
   const { categories } = state;
   const { data: categoryData } = useQuery(QUERY_CATEGORIES);
